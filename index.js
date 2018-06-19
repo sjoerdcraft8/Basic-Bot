@@ -1,7 +1,11 @@
 const discord = require("discord.js");
 
+<<<<<<< HEAD
+const botConfig = require("botConfig.json");
+=======
 var prefix = "!";
-var token = procces.env.token;
+var token = process.env.token;
+>>>>>>> 513b813747b373036543745f298378b5de2540cb
 
 const fs = require("fs");
 
@@ -59,4 +63,4 @@ bot.on("message", async message => {
 
 });
 
-bot.login(botConfig.token);
+bot.login(token);
