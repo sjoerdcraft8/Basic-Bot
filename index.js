@@ -58,4 +58,4 @@ bot.on("message", async message => {
 
 });
 
-bot.login(token);
+bot.login(botConfig.token);
