@@ -1,6 +1,7 @@
 const discord = require("discord.js");
 
-const botConfig = require("botConfig.json");
+const token = process.env.token;
+const prefix = process.env.prefix;
 
 const fs = require("fs");
 
@@ -42,8 +43,6 @@ bot.on("message", async message => {
 
     if (message.channel.type === "dm") return;
 
-    var prefix = botConfig.prefix;
-
     var messageArray = message.content.split(" ");
 
     var command = messageArray[0];
@@ -58,4 +57,4 @@ bot.on("message", async message => {
 
 });
 
-bot.login(botConfig.token);
+bot.login(token);
