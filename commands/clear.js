@@ -10,7 +10,6 @@ module.exports.run = async (bot, message, args, ) => {
 
         var amount = parseInt(args[0]) + 1;
         message.channel.bulkDelete(amount).then(() => {
-            message.channel.send(`Ik heb ${args[0]} berichten verweiderd`).then(msg => msg.delete(3000));
         });
 
     } else {
